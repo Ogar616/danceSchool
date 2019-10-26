@@ -101,6 +101,23 @@
                           >
                         </li>
                         <li>
+                          <ul>
+                            <li>
+                              <a href="content/danceschool/contact.html"
+                                ><span>Taniec</span></a
+                              >
+                            </li>
+                            <li>
+                              <a href="content/danceschool/contact.html"
+                                ><span>Pływanie</span></a
+                              >
+                            </li>
+                            <li>
+                                <a href="content/danceschool/contact.html"
+                                  ><span>Obozy</span></a
+                                >
+                              </li>
+                          </ul>
                           <a href="content/danceschool/contact.html"
                             ><span>Oferta</span></a
                           >
@@ -435,30 +452,30 @@
       var revapi1, tpj;
       (function() {
         if (!/loaded|interactive|complete/.test(document.readyState))
-          document.addEventListener("DOMContentLoaded", onLoad);
+          document.addEventListener('DOMContentLoaded', onLoad);
         else onLoad();
         function onLoad() {
           if (tpj === undefined) {
             tpj = jQuery;
-            if ("off" == "on") tpj.noConflict();
+            if ('off' == 'on') tpj.noConflict();
           }
-          if (tpj("#rev_slider_1_1").revolution == undefined) {
-            revslider_showDoubleJqueryError("#rev_slider_1_1");
+          if (tpj('#rev_slider_1_1').revolution == undefined) {
+            revslider_showDoubleJqueryError('#rev_slider_1_1');
           } else {
-            revapi1 = tpj("#rev_slider_1_1")
+            revapi1 = tpj('#rev_slider_1_1')
               .show()
               .revolution({
-                sliderType: "hero",
-                sliderLayout: "auto",
-                dottedOverlay: "none",
+                sliderType: 'hero',
+                sliderLayout: 'auto',
+                dottedOverlay: 'none',
                 delay: 9000,
                 visibilityLevels: [1240, 1024, 778, 480],
                 gridwidth: 1122,
                 gridheight: 1200,
-                lazyType: "none",
+                lazyType: 'none',
                 parallax: {
-                  type: "scroll",
-                  origo: "enterpoint",
+                  type: 'scroll',
+                  origo: 'enterpoint',
                   speed: 400,
                   speedbg: 0,
                   speedls: 0,
@@ -482,16 +499,16 @@
                   ]
                 },
                 shadow: 0,
-                spinner: "spinner2",
-                autoHeight: "off",
-                disableProgressBar: "on",
-                hideThumbsOnMobile: "off",
+                spinner: 'spinner2',
+                autoHeight: 'off',
+                disableProgressBar: 'on',
+                hideThumbsOnMobile: 'off',
                 hideSliderAtLimit: 0,
                 hideCaptionAtLimit: 0,
                 hideAllCaptionAtLilmit: 0,
                 debugMode: false,
                 fallbacks: {
-                  simplifyAll: "off",
+                  simplifyAll: 'off',
                   disableFocusListener: false
                 }
               });

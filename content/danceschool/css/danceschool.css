@@ -2498,3 +2498,22 @@ input[type="date"], input[type="email"], input[type="number"], input[type="passw
 		#contactform #submit, #newsletterform input {
 			width: 100%;
 		}
+
+
+		#Top_bar .menu>li ul {
+			background: black;
+			/* position: relative; */
+			top: 120px;
+			left: -55px;
+		}
+
+		#Top_bar.is-sticky .menu>li ul {
+			background: black;
+			/* position: relative; */
+			top: 50px;
+			left: -55px;
+		}
+
+		#Top_bar .menu>li ul li a {
+			color: white !important;
+		}
